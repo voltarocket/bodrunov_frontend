@@ -1,0 +1,152 @@
+.section {
+  padding: 0;
+  text-align: center;
+  background: #f8f9fa;
+  margin-bottom: 140px;
+}
+
+.title {
+  font-size: 44px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 60px;
+  color: #212529;
+}
+
+.slider {
+  margin-bottom: 30px;
+}
+
+.card {
+  text-align: left;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cover {
+  object-fit: cover;
+  margin-bottom: 12px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.cardTitle {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  margin-top: 0;
+  color: #212529;
+}
+
+.author {
+  font-size: 14px;
+  color: #495057;
+  margin: 0;
+}
+
+.buttonWrapper {
+  margin-top: 20px;
+}
+
+.button {
+  background: #212D32;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 16px 42px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: #455f6a;
+}
+
+.sliderWrapper {
+  padding: 0 20px; 
+  margin-bottom: 30px;
+  width: 100%;
+  position: relative; 
+  box-sizing: border-box;
+  max-width: 1440px; 
+  margin: 0 auto; 
+}
+
+.slider {
+  width: 100%;
+}
+
+.prevButton,
+.nextButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  top: 25%;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  display: none;
+}
+
+.prevButton {
+  left: 30px; 
+}
+
+.nextButton {
+  right: 30px; 
+}
+
+.prevButton::after,
+.nextButton::after {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-top: 3px solid #898989;
+  border-right: 3px solid #898989;
+}
+
+.prevButton::after {
+  transform: translate(-40%, -50%) rotate(-135deg);
+}
+
+.nextButton::after {
+  transform: translate(-60%, -50%) rotate(45deg);
+}
+
+.prevButton:hover::after,
+.nextButton:hover::after {
+  border-color: #157347;
+}
+
+@media (min-width: 1440px) {
+  .sliderWrapper {
+    padding: 0 130px; 
+  }
+  
+  .prevButton,
+  .nextButton {
+    display: block; 
+  }
+  
+  .prevButton {
+    left: 90px; 
+  }
+  
+  .nextButton {
+    right: 50px; 
+  }
+}
+
+.swiper {
+  max-width: 100%; 
+}
+
+.swiper-slide {
+  width: auto; 
+}
